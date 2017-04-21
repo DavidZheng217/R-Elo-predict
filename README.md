@@ -3,4 +3,4 @@ This project is for final（ISTM-3054)
 
 This is the guildline for this project
 
-![image](http://github.com/A-Pedestrian/R-Elo-predict/raw/master/image-floder/theory.png)
+http://github.com/A-Pedestrian/R-Elo-predict/raw/master/image-floder/theory.png
