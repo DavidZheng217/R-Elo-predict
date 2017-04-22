@@ -1,5 +1,4 @@
 # R-Elo-predict
-This project is for final（ISTM-3054)
 
 # 进度
 *已有~~5000+~~ 4900+条基本数据(删去了一些无用数据)*
@@ -13,7 +12,7 @@ This project is for final（ISTM-3054)
 * 两组的国籍(name_1_county,name_2_country)
 
 
-# This is the guildline for this project
+# 导览
 
 ![image](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/image-floder/theory.png)
 ![image](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/image-floder/theory_1.png)
