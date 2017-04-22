@@ -2,7 +2,7 @@
 This project is for final（ISTM-3054)
 
 # 进度
-*已经有5000+条基本数据*
+*已有~~5000+~~4900+条基本数据(删去了一些无用数据)*
 
 *基本数据* 可以在[这里](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/L_Match.csv)看到，可以在[这里](https://github.com/A-Pedestrian/R-Elo-predict/archive/master.zip)下载 *(文件夹中的 L_match.csv)*
 
