@@ -11,19 +11,19 @@ from multiprocessing.dummy import Pool as ThreadPool
 
 t_start = time.time()
 
-#conn = sqlite3.connect('LOL_match.db',check_same_thread = False)
-#cur = conn.cursor()
-#cur.execute('''DROP TABLE IF EXISTS L_Match''')
-#cur.execute('''
-#CREATE TABLE L_Match (
-#scheduleid UNIQUE PRIMARY KEY NOT NULL,
-#name_1 TEXT,
-#name_2 TEXT,
-#name_1_win TEXT,
-#name_2_win TEXT,
-#name_1_country TEXT,
-#name_2_country TEXT
-#)''')
+conn = sqlite3.connect('LOL_match.db',check_same_thread = False)
+cur = conn.cursor()
+cur.execute('''DROP TABLE IF EXISTS L_Match''')
+cur.execute('''
+CREATE TABLE L_Match (
+scheduleid UNIQUE PRIMARY KEY NOT NULL,
+name_1 TEXT,
+name_2 TEXT,
+name_1_win TEXT,
+name_2_win TEXT,
+name_1_country TEXT,
+name_2_country TEXT
+)''')
 
 raw_cookie = 'wanplus_token=5acfdc53a08dc0bbbd0394a997b8e34e; wanplus_storage=lf4m67eka3o; wanplus_sid=07ec99d65013370bf69ae499d57a0d6d; wanplus_csrf=_csrf_tk_1561048384; gameType=2; Hm_lvt_f69cb5ec253c6012b2aa449fb925c1c2=1492760524; Hm_lpvt_f69cb5ec253c6012b2aa449fb925c1c2=1492760579'
 cookies = { }
