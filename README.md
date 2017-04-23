@@ -1,7 +1,7 @@
 # R-Elo-predict
 
 # 进度
-5000+条基本数据([预览](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/L_Match.csv),[下载](https://github.com/A-Pedestrian/R-Elo-predict/archive/master/L_Match.csv))
+5000+条基本数据([预览](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/L_Match.csv),[下载](https://github.com/A-Pedestrian/R-Elo-predict/archive/blob/master/L_Match.csv))
 其中包含了 
 
 * 两组的名次（name_1,name_2)
