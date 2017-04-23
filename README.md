@@ -23,10 +23,4 @@
 * 比赛中获得金钱数(golds1,golds2)
 
 
-# 导览
-
-![image](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/image-floder/theory.png)
-![image](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/image-floder/theory_1.png)
-![image](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/image-floder/flow_chart.png)
-![image](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/image-floder/sample.png)
-![image](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/image-floder/work_possibility.png)
+# [概述](https://github.com/A-Pedestrian/R-Elo-predict/wiki/概述)
