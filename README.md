@@ -2,6 +2,8 @@
 [Overview](https://github.com/A-Pedestrian/R-Elo-predict/wiki)
 
 ## CODE
+[file_helper](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/codes/final/file_helper.R)
+
 [elo_rating](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/codes/final/elo_rating.R)
 
 [p_win](https://github.com/A-Pedestrian/R-Elo-predict/blob/master/codes/final/p_win.R)
