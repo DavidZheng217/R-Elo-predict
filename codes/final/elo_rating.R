@@ -26,7 +26,7 @@ elo_rating <- function(match_data,sorted = TRUE) {
   colnames(el_df) <- c('team_name','rating')
   #--- check pass
   cat('Analyzing now...','\n')
-  el_df$rating <- 1000
+  el_df$rating <- initial_rating
   for (date in u_date){
     date_df <- df[which(df$game_date == date),]
     for (index in 1:nrow(date_df)) {
