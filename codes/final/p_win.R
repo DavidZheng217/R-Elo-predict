@@ -18,7 +18,14 @@ p_win <- function(rating_table,competitor1,competitor2,both=FALSE,all=FALSE){
       prob3 <- 1/(1+10**((rating_3 - rating_1)/400))
       p_df[p_df$team_name == as.character(n),]$prob <- prob3
     }
-    cat('The full win probability table for',competitor1,'is showed below','\n')
+    cat('The full win probability table for',competitor1,'is created','\n')
+    
+    cat('Plot the output ? [T/F] :','\n')
+    Pl <- scan(nmax = 1, what = 'character', quiet = T)
+    if (Pl == 'T'){
+      print(rPlot(prob ~ team_name,data = p_df,type = 'point')) 
+    }
+    
     return(p_df)
   }
   #--- check pass
