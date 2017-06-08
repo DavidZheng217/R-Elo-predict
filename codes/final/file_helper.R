@@ -5,7 +5,7 @@ file_helper <- function(){
   cat('What is your file\'s name ? :','\n')
   nm <- scan(nmax = 1,what = 'character',quiet = T)
   if (grepl('.csv',nm)){
-    df <- read.csv(nm) 
+    return(read.csv(nm))
   }else{
     cat('Dose the data file has headers ? [T/F] :')
     H <- scan(nmax = 1,what = 'character',quiet = T)
@@ -14,10 +14,9 @@ file_helper <- function(){
     cat('Use what to represent the decimal point ? :')
     D <- scan(nmax = 1,what = 'character',quiet = T)
     if (H == 'T'){
-      df <- read.table(nm,header = T, sep = S, dec = D) 
+      return(read.table(nm,header = T, sep = S, dec = D))
     }else{
-      df <- read.table(nm,header = F, sep = S, dec = D)
+      return(read.table(nm,header = F, sep = S, dec = D))
     }
   }
-  return(df)
 }
