@@ -1,4 +1,9 @@
 elo_rating <- function(match_data,sorted = TRUE) {
+  if (!require(rCharts)){
+    require(devtools)
+    install_github('ramnathv/rCharts')
+    library(rCharts)
+  }
   cat(nrow(match_data),'data read','\n')
   u_date <- unique(df$game_date)
   cat(length(u_date),'different dates in this data','\n')
@@ -14,7 +19,7 @@ elo_rating <- function(match_data,sorted = TRUE) {
   df$team_1_mark <- ifelse(df$team_1_win > df$team_2_win,p_w,ifelse(df$team_1_win < df$team_2_win,p_l,p_d))
   df$team_2_mark <- ifelse(df$team_1_win > df$team_2_win,p_l,ifelse(df$team_1_win < df$team_2_win,p_w,p_d))
   #---check pass
-  cat('Key in initial rating value for every competitor','\n')
+  cat('Key in initial rating value for competitors','\n')
   initial_rating <- scan(nmax = 1,quiet = T)
   el_df <- data.frame(names,initial_rating)
   cat('Confirmed','\n')
@@ -45,6 +50,13 @@ elo_rating <- function(match_data,sorted = TRUE) {
     }
   }
   cat('Done','\n')
+  
+  cat('Plot the output ? [T/F] :','\n')
+  Pl <- scan(nmax = 1, what = 'character', quiet = T)
+  if (Pl == 'T'){
+    print(rPlot(rating ~ team_name,data = el_df,type = 'point')) 
+  }
+  
   if (sorted == FALSE){
     return(el_df)
   }else{
