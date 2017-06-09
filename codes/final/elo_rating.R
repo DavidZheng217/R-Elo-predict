@@ -20,8 +20,8 @@ elo_rating <- function(match_data,sorted = TRUE) {
   p_d <- scan(nmax = 1,quiet = T)
   cat('Point can get if loose :')
   p_l <- scan(nmax = 1,quiet = T)
-  df$team_1_mark <- ifelse(df$team_1_win > df$team_2_win,p_w,ifelse(df$team_1_win < df$team_2_win,p_l,p_d))
-  df$team_2_mark <- ifelse(df$team_1_win > df$team_2_win,p_l,ifelse(df$team_1_win < df$team_2_win,p_w,p_d))
+  df$team_1_mark <- ifelse(as.numeric(df$team_1_win) > as.numeric(df$team_2_win),p_w,ifelse(as.numeric(df$team_1_win) < as.numeric(df$team_2_win),p_l,p_d))
+  df$team_2_mark <- ifelse(as.numeric(df$team_1_win) > as.numeric(df$team_2_win),p_l,ifelse(as.numeric(df$team_1_win) < as.numeric(df$team_2_win),p_w,p_d))
   #---check pass
   cat('Key in initial rating value for competitors','\n')
   initial_rating <- scan(nmax = 1,quiet = T)
