@@ -1,6 +1,6 @@
 elo_rating <- function(match_data,sorted = TRUE) {
   if(!require(devtools)){
-    install.packages(devtools)
+    install.packages('devtools')
     library(devtools)
   }
   if (!require(rCharts)){
